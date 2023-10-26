@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Lights</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            animation: clubLights 2s linear infinite;
+        }
+
+        .light {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: #fff;
+            border-radius: 50%;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes clubLights {
+            0% {
+                background: #f00;
+            }
+            20% {
+                background: #0f0;
+            }
+            40% {
+                background: #00f;
+            }
+            60% {
+                background: #f0f;
+            }
+            80% {
+                background: #ff0;
+            }
+            100% {
+                background: #f00;
+            }
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Create club lights by repeating light elements -->
+    <div class="light" style="top: 50px; left: 50px;"></div>
+    <div class="light" style="top: 100px; left: 200px;"></div>
+    <div class="light" style="top: 150px; left: 350px;"></div>
+    <!-- Add more light elements as needed -->
+</body>
+</html>

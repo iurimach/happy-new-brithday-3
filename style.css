@@ -48,3 +48,58 @@ img{
     100% { color: purple; }
 }
 
+/* shemogdebuli */
+
+
+.wrapperlight{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    animation: clubLights 2s linear infinite;
+    height: 1450px;
+}
+
+.light {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+   
+}
+
+@keyframes clubLights {
+    0% {
+        background: #f00;
+    }
+    20% {
+        background: #0f0;
+    }
+    40% {
+        background: #00f;
+    }
+    60% {
+        background: #f0f;
+    }
+    80% {
+        background: #ff0;
+    }
+    100% {
+        background: #f00;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

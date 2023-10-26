@@ -17,6 +17,8 @@ function startCountdown() {
         if (countdown === 9) {
             const audio = document.getElementById('myAudio');
             audio.play();
+            var wrapper=document.querySelector("#wrapper")
+            wrapper.className=("wrapperlight")
         }
         if(countdown === 6){
             var milocvatext=document.querySelector(".color-changing-text")
